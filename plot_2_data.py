@@ -14,7 +14,7 @@ def svg_to_list (txtlink):
     return x, y
 
 def convert_coordinates (coordinates, tick_1, tick_1_value, tick_2, tick_2_value, start_point, end_point):    
-    # Calculate Software Offset ans Scale
+    # Calculate Software Offset and Scale
     software_scale = (tick_2 - tick_1) / (tick_2_value - tick_1_value)  # =^ length of 1
     software_offset = tick_1 - (tick_1_value * software_scale)          # =^ position of 0
     
